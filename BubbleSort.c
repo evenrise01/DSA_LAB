@@ -37,6 +37,7 @@ for (int i = 0; i< n; i++){  // Input of the Array
 
 }
 
+printf("Unsorted Array: \n");
 PrintArray(arr,n); //Unsorted Array Print
 BubbleSort(arr,n);
 
