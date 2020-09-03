@@ -1,15 +1,19 @@
 #include <stdio.h>
 
+void swap(int *xp, int *yp){
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
 void BubbleSort(int arr[],int n){
 int temp;
 	for(int i =0; i<n-1;i++){
 		for (int j = 0; j<n-i-1;j++){
-			
+
 			if(arr[j] > arr[j+1])
 
-			temp = arr[j];    //temp variable = first variable
-			arr[j] = arr[j+1]; 
-			arr[j+1] = temp;
+			swap(&arr[j],&arr[j+1]);
 		}
 	}
 
@@ -19,7 +23,7 @@ void PrintArray(int arr[],int n){
 	int i;
 	for (i=0;i<n;i++){
 		printf("%d ",arr[i]);
-		
+
 	}
 	printf("\n");
 }
