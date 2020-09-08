@@ -18,7 +18,7 @@ for(c=0;c<n;c++)
     for(c=0;c<n;c++){
 
         if(array[c]==search){
-            printf("%d is present at location %d.\n", search, c+1);
+            printf("%d is present at location %d.\n", search, c);
             count++;
         }
     }
