@@ -20,14 +20,14 @@ first=0;
 last = n-1;
 middle = (first+last)/2;
 
-    while(first<=last != search){
+    while(first<=last){
 
     if(array[middle]<search)
         first = middle + 1;
 
     else if (array[middle] == search){
 
-        printf("%d is present at index %d.\n",search,middle+1);
+        printf("%d is present at index %d.\n",search,middle);
         break;
     }
 
