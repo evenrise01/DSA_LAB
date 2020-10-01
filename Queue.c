@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
+#define MAX 10
 void insert();
 void delete();
 void display();
-int queue_arr[5];
+int queue_arr[MAX];
 int rear = -1;
 int front = -1;
 
-main(){
+int main(){
 
     int choice;
     while(1){
@@ -41,7 +42,7 @@ main(){
 
 void insert(){
     int add_item;
-    if(rear == 5-1)
+    if(rear == MAX-1)
     printf("Queue Overflow \n");
 
     else
